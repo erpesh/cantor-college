@@ -11,7 +11,7 @@ $resultCourses = $mysqli->query($queryCourses);
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cantor College | Home page</title>
+  <title>About Us | Cantor College</title>
   <link rel="stylesheet" href="css/mobile.css" />
   <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width : 720px)" />
 </head>
@@ -23,9 +23,13 @@ $resultCourses = $mysqli->query($queryCourses);
   <div class="mainContainer">
     <main>
       <div class="banner">
-        <h2>About Us</h2>
+        <div class="bannerImage">
+          <img src="images/about-us-bg-image.jpg" style="visibility: hidden" />
+          <h1>About Us</h1>
+        </div>
       </div>
-      <section class="homePage">
+      <h1>About Us</h1>
+      <section>
         Cantor College was established in 1989 to specialize in Computing and Design. At Cantor College, we want to give
         students the education they need to achieve their career aims, leaving them equipped with the knowledge, skills
         and experience to succeed. Cantor College gives you the opportunities that can give you the edge when you enter
@@ -34,10 +38,8 @@ $resultCourses = $mysqli->query($queryCourses);
         ambitions, our learning and support can help to get the most out of your time with Cantor College, both as a
         student and in your future career.
       </section>
-      <div class="banner">
-        <h2>How To Find Us</h2>
-      </div>
-      <section class="homePage">
+      <h2>How To Find Us</h2>
+      <section class="aboutUsSection">
         <h3>Address</h3>
         <div class="address">
           <ul class="address">
@@ -47,10 +49,13 @@ $resultCourses = $mysqli->query($queryCourses);
             <li>SC4 2BB</li>
           </ul>
           <div class="iframeMap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d707.6137939225056!2d-1.4683908721527261!3d53.37690931483411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48798338bc5a1d13%3A0xad74824d1242efa8!2sCantor%20College!5e0!3m2!1sen!2slt!4v1671788542943!5m2!1sen!2slt" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d707.6137939225056!2d-1.4683908721527261!3d53.37690931483411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48798338bc5a1d13%3A0xad74824d1242efa8!2sCantor%20College!5e0!3m2!1sen!2slt!4v1671788542943!5m2!1sen!2slt"
+              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
-        <ul>
+        <h3>Contacts</h3>
+        <ul class="contacts">
           <li>Tel:(01321) 2340 235</li>
           <li>Fax: (01321) 2340 236</li>
           <li>Email: info@cantorcollege.ac.uk</li>
