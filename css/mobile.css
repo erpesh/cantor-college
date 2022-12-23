@@ -8,7 +8,7 @@
   --header-bg-colour: #111111;
   --header-colour: #fff;
   --main-theme-colour: #59AEAD;
-  --footer-bg-colour: #383416;
+  --footer-bg-colour: #2e2d2c;
   --footer-colour: #fff;
   --main-gray-colour: rgb(192, 184, 184);
 }
@@ -224,36 +224,43 @@ header>div:last-child {
   border-top-color: #d9d9d9;
   box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
 }
+
 @media screen and (max-width: 600px) {
-  .searchResultsContainer{
+  .searchResultsContainer {
     margin: 0 auto;
     width: 450px;
   }
 }
+
 @media screen and (max-width: 500px) {
-  .searchResultsContainer{
+  .searchResultsContainer {
     width: 350px;
   }
 }
+
 @media screen and (max-width: 400px) {
-  .searchResultsContainer{
+  .searchResultsContainer {
     width: 300px;
   }
 }
+
 @media screen and (max-width: 325px) {
-  .searchResultsContainer{
+  .searchResultsContainer {
     width: 250px;
   }
 }
+
 .searchResultsList {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.searchResultsItem{
-  color: #111;  
+
+.searchResultsItem {
+  color: #111;
   padding: 0 1rem;
 }
+
 /* Rotate first bar */
 .burger.changeBurger>.line:first-child {
   transform: translate(0, 11px) rotate(-45deg);
@@ -265,4 +272,64 @@ header>div:last-child {
 
 .burger.changeBurger>.line:last-child {
   transform: translate(0, -11px) rotate(45deg);
+}
+
+/* main content */
+div.address {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+ul.address {
+  list-style-type: none;
+}
+ul.address > li {
+  font-size: 24px;
+}
+.iframeMap {
+  margin: 0 auto;
+  width: 95%;
+  height: 250px;
+}
+
+.iframeMap iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* footer */
+.footerContainer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: var(--footer-bg-colour);
+  color: var(--footer-colour);
+  margin: 40px 0 0 0;
+  font-size: 0.8em;
+  padding: 20px 0;
+}
+
+footer>nav {
+  padding: 0;
+  margin: 0;
+}
+
+footer>nav>menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+footer>nav>menu>li>a {
+  color: var(--footer-colour);
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+footer>div {
+  text-align: center;
 }

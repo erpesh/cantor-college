@@ -2,13 +2,6 @@
 require_once("includes/config.php");
 $queryCourses = "SELECT * FROM courses";
 $resultCourses = $mysqli->query($queryCourses);
-
-// function echoObject(?object $courseItem)
-// {
-//   echo "<div>";
-//   echo "<h3>{$courseItem->CourseSummary}</h3>";
-//   echo "</div>";
-// }
 ?>
 
 <!DOCTYPE html>
@@ -33,17 +26,12 @@ $resultCourses = $mysqli->query($queryCourses);
         <h2>Banner</h2>
       </div>
       <section class="homePage">
-        <!-- <?php
-        while ($obj = $resultCourses->fetch_object()) {
-          echoObject($obj);
-        }
-        ?> -->
       </section>
     </main>
   </div>
 
   <?php
-  // include("includes/footer.php");
+  include("includes/footer.php");
   ?>
 
   <script src="js/main.js"></script>
