@@ -301,9 +301,6 @@ header>div:last-child {
   width: 100%;
   height: auto;
 }
-.aboutUsSection{
-  padding-left: 1rem;
-}
 div.address {
   display: flex;
   justify-content: space-between;
@@ -317,6 +314,9 @@ ul.address {
 }
 ul.address > li {
   font-size: 24px;
+}
+ul.contacts > li > a {
+  color: var(--main-theme-colour);
 }
 .iframeMap {
   margin: 0 auto;

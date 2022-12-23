@@ -85,7 +85,9 @@ header>.div:last-child {
 }
 
 /* main content */
-
+.aboutUsSection{
+    padding-left: 1rem;
+}
 div.address {
     display: grid;
     gap: 5rem;

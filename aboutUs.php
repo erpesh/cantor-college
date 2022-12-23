@@ -56,9 +56,9 @@ $resultCourses = $mysqli->query($queryCourses);
         </div>
         <h3>Contacts</h3>
         <ul class="contacts">
-          <li>Tel:(01321) 2340 235</li>
-          <li>Fax: (01321) 2340 236</li>
-          <li>Email: info@cantorcollege.ac.uk</li>
+          <li>Tel: <a href="tel:+(01321) 2340 235">(01321) 2340 235</a></li>
+          <li>Fax: <a href="tel:+(01321) 2340 236">(01321) 2340 236</a></li>
+          <li>Email: <a href="mailto:info@cantorcollege.ac.uk">info@cantorcollege.ac.uk</a></li>
         </ul>
       </section>
     </main>
