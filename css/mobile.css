@@ -36,7 +36,14 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.activeNavItem{
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--main-theme-colour);
+  padding: 8px 0;
+}
 header h1 {
   margin: 0;
 }
@@ -75,7 +82,7 @@ header>div:last-child {
   padding: 5px 15px;
 }
 
-.mainNav>menu>li>a {
+.navItem {
   display: inline-block;
   width: 100%;
   font-weight: bold;
@@ -260,7 +267,6 @@ header>div:last-child {
   color: #111;
   padding: 0 1rem;
 }
-
 /* Rotate first bar */
 .burger.changeBurger>.line:first-child {
   transform: translate(0, 11px) rotate(-45deg);
@@ -275,6 +281,10 @@ header>div:last-child {
 }
 
 /* main content */
+h2{
+  display: flex;
+  justify-content: center;
+}
 .banner{
   width: 100%;
 }

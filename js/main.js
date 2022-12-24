@@ -24,4 +24,18 @@
   setMenu();
   // resize
   window.addEventListener("resize", () => setMenu());
+
+  function highlightActivePage(){
+    document.querySelectorAll("nav > menu > li > a").forEach(item => {
+      console.log(item);
+      const path = document.location.pathname.split("/");
+      const fileName = path[path.length - 1];
+      console.log(item.getAttribute("href").includes(fileName))
+      if (item.getAttribute("href").includes(fileName)){
+          item.setAttribute("class", "activeNavItem");
+      }
+  });
+  }
+  highlightActivePage();
+
 })();

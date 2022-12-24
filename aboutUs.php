@@ -28,7 +28,7 @@ $resultCourses = $mysqli->query($queryCourses);
           <h1>About Us</h1>
         </div>
       </div>
-      <h1>About Us</h1>
+      <h2>About Us</h2>
       <section>
         Cantor College was established in 1989 to specialize in Computing and Design. At Cantor College, we want to give
         students the education they need to achieve their career aims, leaving them equipped with the knowledge, skills
