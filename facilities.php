@@ -36,7 +36,7 @@ $resultCourses = $mysqli->query($queryCourses);
         <p>Our building has space of 9500m², houses over 240 staff and provides teaching space for more than 1600
           students.</p>
       </section>
-      <h2>Facilities include:</h2>
+      <h3>Facilities include:</h3>
       <section>
         <ul>
           <li>wi-fi technology</li>

@@ -284,7 +284,7 @@ header>div:last-child {
 main > section {
   font-size: 20px;
 }
-h2{
+h2, main > h1{
   display: flex;
   justify-content: center;
 }
@@ -350,6 +350,15 @@ ul.contacts > li{
 /* facilities */
 .facilitiesImage{
   background:linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,6)), url('../images/facilities.webp');
+}
+/* resources */
+ol.resources > li::marker{
+  font-weight: bold;
+  font-size: 1.17em;
+}
+.resourcesGrayText{
+  color: grey;
+  font-style: italic;
 }
 /* footer */
 .footerContainer {
