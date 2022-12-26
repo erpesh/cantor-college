@@ -281,6 +281,9 @@ header>div:last-child {
 }
 
 /* main content */
+main > section {
+  font-size: 20px;
+}
 h2{
   display: flex;
   justify-content: center;
@@ -342,7 +345,6 @@ ul.contacts > li > a {
 ul.contacts > li{
   font-size: 20px;
 }
-
 /* footer */
 .footerContainer {
   position: relative;

@@ -41,13 +41,13 @@
       <nav class="mainNav">
         <menu>
           <li><a class="navItem" href="aboutUs.php">About Us</a></li>
-          <li><a class="navItem" href="catalogue.php">Courses</a></li>
-          <li><a class="navItem" href="search.php">Facilities</a></li>
-          <li><a class="navItem" href="contact.php">Resources</a></li>
-          <li><a class="navItem" href="index.php">For Staff</a></li>
-          <li><a class="navItem" href="catalogue.php">For Students</a></li>
-          <li><a class="navItem" href="search.php">Business</a></li>
-          <li><a class="navItem" href="contact.php">Contact Us</a></li>
+          <li><a class="navItem" href="courses.php">Courses</a></li>
+          <li><a class="navItem" href="facilities.php">Facilities</a></li>
+          <li><a class="navItem" href="resources.php">Resources</a></li>
+          <li><a class="navItem" href="forStaff.php">For Staff</a></li>
+          <li><a class="navItem" href="forStudents.php">For Students</a></li>
+          <li><a class="navItem" href="business.php">Business</a></li>
+          <li><a class="navItem" href="contactUs.php">Contact Us</a></li>
         </menu>
         <div class="searchIcon desktopIcon">
           <img src="images/search.png" />
