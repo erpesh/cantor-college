@@ -23,7 +23,7 @@ $resultCourses = $mysqli->query($queryCourses);
   <div class="mainContainer">
     <main>
       <div class="banner">
-        <div class="bannerImage aboutUsImage" style="background-size: cover">
+        <div class="bannerImage">
           <img src="images/about-us-bg-image.jpg" style="visibility: hidden" />
           <h1>About Us</h1>
         </div>

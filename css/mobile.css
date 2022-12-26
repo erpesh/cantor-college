@@ -292,8 +292,10 @@ h2{
   width: 100%;
 }
 .bannerImage{
-  background:linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,6)), url('../images/about-us.jpg');
   background-size: cover;
+}
+.aboutUsImage{
+  background:linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,6)), url('../images/about-us.jpg');
 }
 .bannerImage > h1 {
   position: relative;
@@ -344,6 +346,10 @@ ul.contacts > li > a {
 }
 ul.contacts > li{
   font-size: 20px;
+}
+/* facilities */
+.facilitiesImage{
+  background:linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,6)), url('../images/facilities.webp');
 }
 /* footer */
 .footerContainer {
