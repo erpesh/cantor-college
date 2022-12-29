@@ -24,7 +24,7 @@ $resultCourses = $mysqli->query($queryCourses);
     <main>
       <div class="banner">
         <div class="bannerImage">
-          <img src="images/about-us-bg-image.jpg" style="visibility: hidden" />
+          <img src="images/about-us.jpg" style="visibility: hidden" />
           <h1>Resources</h1>
         </div>
       </div>

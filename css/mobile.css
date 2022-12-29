@@ -360,6 +360,14 @@ ol.resources > li::marker{
   color: grey;
   font-style: italic;
 }
+/* for staff */
+ul.forStaff{
+  list-style-type: none;
+  padding: 0;
+}
+ul.forStaff > li > h4 {
+  margin: 0;
+}
 /* footer */
 .footerContainer {
   position: relative;
