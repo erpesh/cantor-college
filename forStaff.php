@@ -30,7 +30,7 @@ $resultCourses = $mysqli->query($queryCourses);
       </div>
       <h2>Information for Staff</h2>
       <section>
-        <ul class="forStaff">
+        <ul class="nonDecor itemsMargin">
           <li>
             <h4>News</h4>
             <p>Cantor College recently hosted the Software Engineering student of the year awards. Shortlisted

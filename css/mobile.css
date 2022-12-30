@@ -361,11 +361,18 @@ ol.resources > li::marker{
   font-style: italic;
 }
 /* for staff */
-ul.forStaff{
+ul.nonDecor{
   list-style-type: none;
   padding: 0;
 }
-ul.forStaff > li > h4 {
+ul.nonDecor > li > ul > li,
+ul.nonDecor > li > p{
+  font-size: 16px;
+}
+ul.forStudents > li > ul {
+  padding-left: 12px;
+}
+ul.itemsMargin > li > h4 {
   margin: 0;
 }
 /* footer */
