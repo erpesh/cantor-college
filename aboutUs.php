@@ -1,9 +1,3 @@
-<?php
-require_once("includes/config.php");
-$queryCourses = "SELECT * FROM courses";
-$resultCourses = $mysqli->query($queryCourses);
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 

@@ -1,9 +1,3 @@
-<?php
-require_once("includes/config.php");
-$queryCourses = "SELECT * FROM courses";
-$resultCourses = $mysqli->query($queryCourses);
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +17,7 @@ $resultCourses = $mysqli->query($queryCourses);
   <div class="mainContainer">
     <main>
       <div class="banner">
-        <div class="bannerImage">
+        <div class="bannerImage facilitiesImage" style="background-size: cover">
           <img src="images/about-us.jpg" style="visibility: hidden" />
           <h1>Resources</h1>
         </div>
