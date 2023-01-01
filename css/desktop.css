@@ -142,15 +142,13 @@ div.address {
     display: flex;
     justify-content: center;
 }
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
-    width: 400px;
-    ;
+#contact {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    gap: 2rem;
 }
-
-input[type="submit"] {
-    width: 400px;
+.sendButton {
+    grid-column: 1 / span 2;
+    margin: 0 auto;
+    width: 500px;
 }
