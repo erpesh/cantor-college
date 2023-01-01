@@ -18,29 +18,31 @@
     <main>
       <h2>Contact Us</h2>
       <section>
-      <form action="thankYou.php" method="post">
-          <div>
-            <label for="firstName">First name</label>
-            <input type="text" name="firstname" id="firstname" placeholder="Your First Name" required>
+        <form id="contact" action="thankYou.php" method="post">
+          <div class="contactInputs">
+            <div>
+              <label for="firstName">First name</label>
+              <input type="text" name="firstname" id="firstname" placeholder="Your First Name" required>
+            </div>
+            <div>
+              <label for="lastName">Last name</label>
+              <input type="text" name="lastname" id="lastname" placeholder="Your Last Name" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div>
+              <label for="tel">Contact telephone</label>
+              <input type="tel" name="tel" id="tel" placeholder="Your Contact telephone" required>
+            </div>
           </div>
-          <div>
-            <label for="lastName">Last name</label>
-            <input type="text" name="lastname" id="lastname" placeholder="Your Last Name" required>
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required>
-          </div>
-          <div>
-            <label for="tel">Contact telephone</label>
-            <input type="tel" name="tel" id="tel" required>
-          </div>
-          <div>
+          <div class="messageContainer">
             <label for="message">Your message</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="message" name="message" placeholder="Your message" required></textarea>
           </div>
-          <div>
-            <input type="submit" value="Send" class="sendButton">
+          <div class="sendButton">
+            <input type="submit" value="Send">
           </div>
         </form>
       </section>
