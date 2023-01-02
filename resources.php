@@ -17,8 +17,8 @@
   <div class="mainContainer">
     <main>
       <div class="banner">
-        <div class="bannerImage facilitiesImage" style="background-size: cover">
-          <img src="images/about-us.jpg" style="visibility: hidden" />
+        <div class="bannerImage resourcesImage" style="background-size: cover">
+          <img src="images/resources.webp" style="visibility: hidden" />
           <h1>Resources</h1>
         </div>
       </div>

@@ -42,7 +42,7 @@
             <textarea id="message" name="message" placeholder="Your message" required></textarea>
           </div>
           <div class="sendButton">
-            <input type="submit" value="Send">
+            <input type="submit" value="SUBMIT">
           </div>
         </form>
       </section>

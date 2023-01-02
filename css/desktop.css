@@ -5,8 +5,17 @@ footer {
     margin: 0 auto;
 }
 
+p,
+ul.nonDecor>li>ul>li {
+    font-size: 20px;
+}
+
 main {
     margin-bottom: 120px;
+}
+
+main>h1 {
+    font-size: 32px;
 }
 
 .burger {
@@ -45,20 +54,24 @@ header>.div:last-child {
 .mainNav>menu>li>a {
     transition: color 0.5s;
 }
-@media screen and (max-width: 1024px){
+
+@media screen and (max-width: 1024px) {
     .mainNav>menu>li>a {
         font-size: 14px;
     }
 }
-@media screen and (max-width: 937px){
+
+@media screen and (max-width: 937px) {
     .mainNav>menu>li {
         padding: 5px;
         font-size: 12px;
     }
-    .desktopIcon{
+
+    .desktopIcon {
         margin-left: 5px;
     }
 }
+
 .mainNav>menu>li>a:hover {
     color: var(--main-theme-colour);
 }
@@ -85,9 +98,10 @@ header>.div:last-child {
 }
 
 /* main content */
-.aboutUsSection{
+.aboutUsSection {
     padding-left: 1rem;
 }
+
 div.address {
     display: grid;
     gap: 5rem;
@@ -142,11 +156,13 @@ div.address {
     display: flex;
     justify-content: center;
 }
+
 #contact {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
     gap: 2rem;
 }
+
 .sendButton {
     grid-column: 1 / span 2;
     margin: 0 auto;
