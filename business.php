@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | Cantor College</title>
+  <title>Business | Cantor College</title>
   <link rel="stylesheet" href="css/mobile.css" />
   <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width : 720px)" />
 </head>
