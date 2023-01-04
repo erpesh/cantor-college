@@ -1,3 +1,29 @@
+<?php
+require_once("includes/config.php");
+$computingQuery = "SELECT * FROM courses WHERE CourseSubject = \"Computing\"";
+$desingQuery = "SELECT * FROM courses WHERE CourseSubject = \"Art and design\"";
+$computingCourses = $mysqli->query($computingQuery);
+$designCourses = $mysqli->query($desingQuery);
+
+function tableEcho(object $resultObject)
+{
+  while ($obj = $resultObject->fetch_object()) {
+    echo "<tr>";
+    echo "<td>" . $obj->CourseTitle . "</td>";
+    echo "<td>" . $obj->CourseType . "</td>";
+    echo "<td class=\"summary\">" . $obj->CourseSummary . "</td>";
+    echo "<td>" . $obj->CourseAwardName . "</td>";
+    echo "<td>" . $obj->UcasCode . "</td>";
+    echo "<td>" . $obj->UcasPoints . "</td>";
+    echo "<td>" . $obj->YearOfEntry . "</td>";
+    echo "<td>" . $obj->ModeOfAttendance . "</td>";
+    echo "<td>" . $obj->StudyLength . "</td>";
+    echo "<td>" . $obj->HasFoundationYear . "</td>";
+    echo "<td>" . $obj->NoLongerRecruiting . "</td>";
+    echo "</tr>";
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,74 +45,79 @@
       <div class="banner">
         <div class="bannerImage forStudentsImage" style="background-size: cover">
           <img src="images/forStudents.webp" style="visibility: hidden" />
-          <h1>For Students</h1>
+          <h1>Courses</h1>
         </div>
       </div>
-      <h2>Information for Students</h2>
-      <section>
-        <ul class="nonDecor forStudents">
-          <li>
-            <h4>Academic Information</h4>
-            <ul>
-              <li>Faculties - Links to all the Faculty and Departmental Offices with information on staff, courses and
-                events.</li>
-              <li>A to Z List of Departments - Departmental Homepages.</li>
-              <li>Library and Learning Resource Services - Information on LLRS services, access to the on-line
-                catalogue, links to external academic resources and guides to using IT to support your studies.</li>
-              <li>Our Academic Partners - Information on College links.</li>
-              <li>Research - links to the Research Centres, guide to research opportunities and help on finding research
-                funding.</li>
-            </ul>
-          </li>
-          <li>
-            <h4>Administrative Support</h4>
-            <ul>
-              <li>Academic Registry - Information provided by the Academic Registry, including Academic Calendars,
-                Academic Regulations, Module Catalogue, information on award ceremonies and tuition fees.</li>
-              <li>Student Guide to Regulations - General and Academic Regulations, World Wide Web Code of Practice,
-                Rules Governing the Use of LLRS facilities.</li>
-            </ul>
-          </li>
-          <li>
-            <h4>Student Services</h4>
-            <ul>
-              <li>Advisory and Counselling Centre - academic advice, help for international students, careers guidance,
-                personal counselling, student loans and access funds and support for students with disabilities/learning
-                difficulties.</li>
-              <li>Health Centre - guide to the services provided by the University Health Centre.</li>
-              <li>Multi-Faith Centre - information regarding the work of the Multi-Faith Centre.</li>
-              <li>Pre-School Centre - contact information regarding the University's child care facilities.</li>
-              <li>Sports Centre - booking arrangements and facilities.</li>
-            </ul>
-          </li>
-          <li>
-            <h4>University Services</h4>
-            <ul>
-              <li>Catering Services - guide to the catering facilities on campus.</li>
-              <li>Printing Services - information regarding services provided for students.</li>
-              <li>Student Accommodation Services - guide to University Accommodation and help on finding accommodation
-                in the private sector.</li>
-            </ul>
-          </li>
-          <li>
-            <h4>Life at the University</h4>
-            <ul>
-              <li>Arts Centre - what's on at the University's arts venues.</li>
-              <li>Students' Union - events and services provided by the Students' Union.</li>
-              <li>University Guide - a full guide to life at the University.</li>
-              <li>Campus Navigator - help with finding your way around campus.</li>
-            </ul>
-          </li>
-          <li>
-            <h4>Communications</h4>
-            <ul>
-              <li>Noticeboards - General, Classified, Events and Alumni noticeboards.</li>
-              <li>Student Email Search - database of student email addresses.</li>
-              <li>Staff Search - database of staff email addresses.</li>
-              <li>A to Z List of Services - full A to Z list of University Services.</li>
-            </ul>
-          </li>
-        </ul>
+      <h2>Computing Courses</h2>
+      <section class="courses">
+        <p>The College offers a range of courses to suit applicants with varying backgrounds and educational abilities.
+          At undergraduate level, there are single BSc Honours Degree courses in Computing, Computer Networks, Software
+          Engineering and Cyber Security with Forensics amongst others.</p>
+        <p>The College teaches undergraduate and postgraduate courses in a wide range of specialisms, including computer
+          science, software development, information systems, networking and software engineering. It is at the heart of
+          a passionate computing community, including student societies devoted to games development, digital forensics
+          and programming.</p>
+        <p>The courses are British Computer Society accredited and are highly relevant to modern industry. They are
+          designed to prepare students for professional occupations in Computing and related fields. Many graduates
+          continue their studies to pursue a higher degree such as an MSc. or PhD.</p>
+        <div style="overflow-x:auto;">
+          <table>
+            <!-- <colgroup>
+              <col span="1" style="width: 8%;">
+              <col span="1" style="width: 8%;">
+              <col span="1" style="width: 20%;">
+              <col span="1" style="width: 8%;">
+              <col span="1" style="width: 8%;">
+              <col span="1" style="width: 8%;">
+              <col span="1" style="width: 8%;">
+              <col span="1" style="width: 8%;">
+              <col span="1" style="width: 8%;">
+              <col span="1" style="width: 8%;">
+              <col span="1" style="width: 8%;">
+            </colgroup> -->
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Type</th>
+                <th class="summary">Summary</th>
+                <th>Award</th>
+                <th>UCAS Code</th>
+                <th>UCAS Points</th>
+                <th>Year of Entry</th>
+                <th>Attendance Mode</th>
+                <th>Length</th>
+                <th>Foundation Year</th>
+                <th>No Longer Recruiting</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php
+              tableEcho($computingCourses);
+              ?>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <h2>Design Courses</h2>
+      <section class="courses">
+        <p>The College is an internationally connected creative community of diverse disciplines housed under one
+          roof.We shape our students' futures, preparing them to shape the world through applied knowledge and
+          creativity.</p>
+        <p>The College's art and design courses don't just train you, they promote alternative ways of thinking, making
+          and communicating; they provide you with space, tools and inspiration to develop your creative practice and a
+          clear career path. You'll get expert teaching from active practitioners and researchers who will encourage you
+          to adopt innovative and resourceful approaches that both perceive and create opportunities for better lives.
+        </p>
+        <p>You'll develop your creative practice whilst interacting with your peers in well-equipped studios, making and
+          digital workshops. At the same time, you'll learn professional skills by working on applied briefs facilitated
+          through our links with commercial clients, cultural institutions, businesses and organisations.</p>
+        <div style="overflow-x:auto;">
+          <table>
+            <?php
+            tableEcho($designCourses);
+            ?>
+          </table>
+        </div>
       </section>
     </main>
   </div>
