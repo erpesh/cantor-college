@@ -1,3 +1,18 @@
+<?php
+require_once("includes/config.php");
+$postQuery = "";
+if (!empty($_POST)) 
+{
+  $firstName = $_REQUEST["firstname"];
+  $lastName = $_REQUEST["lastname"];
+  $email = $_REQUEST["email"];
+  $telephone = $_REQUEST["tel"];
+  $message = $_REQUEST["message"];
+  // $mes = $_REQUEST["da"];
+  $postQuery = "INSERT INTO contactforms (userFirstName, userLastName, userEmail, userTelNumber, userMessage) 
+  VALUES ('$firstName', '$lastName', '$email', '$telephone', '$message');";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,22 +31,15 @@
   ?>
   <div class="mainContainer">
     <main>
-      <h2>Information for Staff</h2>
-      <section>
-      <table>
+      <h2>Thank you!</h2>
+      <section class="centre">
         <?php
-          foreach($_POST as $key => $value){
-          echo "<tr>";
-          echo "<td class=\"uc\">";
-          echo $key;
-          echo "</td>";
-          echo "<td>";
-          echo $value;
-          echo "</td>";
-          echo "<tr>";
+          if(!empty($_POST) && mysqli_query($mysqli, $postQuery)){
+            echo "<h1>Thank you! We will get in touch with you shortly!</h1>";
+          } else{
+            echo "<h1>Something went wrong. Please go back and try to fill in the contact form again.</h1>";
           }
         ?>
-      </table>
       </section>
     </main>
   </div>

@@ -22,19 +22,19 @@
           <div class="contactInputs">
             <div>
               <label for="firstName">First name</label>
-              <input type="text" name="firstname" id="firstname" placeholder="Your First Name" required>
+              <input type="text" maxlength="25" name="firstname" id="firstname" placeholder="Your First Name" required>
             </div>
             <div>
               <label for="lastName">Last name</label>
-              <input type="text" name="lastname" id="lastname" placeholder="Your Last Name" required>
+              <input type="text" maxlength="25" name="lastname" id="lastname" placeholder="Your Last Name" required>
             </div>
             <div>
               <label for="email">Email</label>
-              <input type="email" name="email" id="email" placeholder="Your Email" required>
+              <input type="email" maxlength="50" name="email" id="email" placeholder="Your Email" required>
             </div>
             <div>
               <label for="tel">Contact telephone</label>
-              <input type="tel" name="tel" id="tel" placeholder="Your Contact telephone" required>
+              <input type="tel" maxlength="15" name="tel" id="tel" placeholder="Your Contact telephone" required>
             </div>
           </div>
           <div class="messageContainer">

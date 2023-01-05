@@ -452,6 +452,11 @@ textarea {
   background: black;
   color: white;
 }
+/* thank you */
+.centre {
+  display: flex;
+  justify-content: center;
+}
 /* courses */
 table {
   font-family: 'Times New Roman', Times, serif;
