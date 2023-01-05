@@ -10,16 +10,16 @@ function tableEcho(object $resultObject)
   while ($obj = $resultObject->fetch_object()) {
     echo "<tr>";
     echo "<td>" . $obj->CourseTitle . "</td>";
-    echo "<td>" . $obj->CourseType . "</td>";
-    echo "<td class=\"summary\">" . $obj->CourseSummary . "</td>";
-    echo "<td>" . $obj->CourseAwardName . "</td>";
-    echo "<td>" . $obj->UcasCode . "</td>";
-    echo "<td>" . $obj->UcasPoints . "</td>";
-    echo "<td>" . $obj->YearOfEntry . "</td>";
-    echo "<td>" . $obj->ModeOfAttendance . "</td>";
-    echo "<td>" . $obj->StudyLength . "</td>";
-    echo "<td>" . $obj->HasFoundationYear . "</td>";
-    echo "<td>" . $obj->NoLongerRecruiting . "</td>";
+    echo "<td class=\"typeColumn\">" . $obj->CourseType . "</td>";
+    // echo "<td class=\"summary\">" . $obj->CourseSummary . "</td>";
+    // echo "<td>" . $obj->CourseAwardName . "</td>";
+    // echo "<td>" . $obj->UcasCode . "</td>";
+    // echo "<td>" . $obj->UcasPoints . "</td>";
+    // echo "<td>" . $obj->YearOfEntry . "</td>";
+    // echo "<td>" . $obj->ModeOfAttendance . "</td>";
+    // echo "<td>" . $obj->StudyLength . "</td>";
+    // echo "<td>" . $obj->HasFoundationYear . "</td>";
+    // echo "<td>" . $obj->NoLongerRecruiting . "</td>";
     echo "</tr>";
   }
 }
@@ -62,24 +62,10 @@ function tableEcho(object $resultObject)
           continue their studies to pursue a higher degree such as an MSc. or PhD.</p>
         <div style="overflow-x:auto;">
           <table>
-            <!-- <colgroup>
-              <col span="1" style="width: 8%;">
-              <col span="1" style="width: 8%;">
-              <col span="1" style="width: 20%;">
-              <col span="1" style="width: 8%;">
-              <col span="1" style="width: 8%;">
-              <col span="1" style="width: 8%;">
-              <col span="1" style="width: 8%;">
-              <col span="1" style="width: 8%;">
-              <col span="1" style="width: 8%;">
-              <col span="1" style="width: 8%;">
-              <col span="1" style="width: 8%;">
-            </colgroup> -->
-            <thead>
-              <tr>
-                <th>Title</th>
-                <th>Type</th>
-                <th class="summary">Summary</th>
+            <tr>
+              <th>Title</th>
+              <th class="typeColumn">Type</th>
+              <!-- <th class="summary">Summary</th>
                 <th>Award</th>
                 <th>UCAS Code</th>
                 <th>UCAS Points</th>
@@ -87,14 +73,11 @@ function tableEcho(object $resultObject)
                 <th>Attendance Mode</th>
                 <th>Length</th>
                 <th>Foundation Year</th>
-                <th>No Longer Recruiting</th>
-              </tr>
-            </thead>
-            <tbody>
-              <?php
-              tableEcho($computingCourses);
-              ?>
-            </tbody>
+                <th>No Longer Recruiting</th> -->
+            </tr>
+            <?php
+            tableEcho($computingCourses);
+            ?>
           </table>
         </div>
       </section>
@@ -113,6 +96,19 @@ function tableEcho(object $resultObject)
           through our links with commercial clients, cultural institutions, businesses and organisations.</p>
         <div style="overflow-x:auto;">
           <table>
+            <tr>
+              <th>Title</th>
+              <th class="typeColumn">Type</th>
+              <!-- <th class="summary">Summary</th>
+                <th>Award</th>
+                <th>UCAS Code</th>
+                <th>UCAS Points</th>
+                <th>Year of Entry</th>
+                <th>Attendance Mode</th>
+                <th>Length</th>
+                <th>Foundation Year</th>
+                <th>No Longer Recruiting</th> -->
+            </tr>
             <?php
             tableEcho($designCourses);
             ?>
