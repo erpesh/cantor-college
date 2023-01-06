@@ -234,6 +234,7 @@ header>div:last-child {
   border: 1px solid #ccc;
   border-top-color: #d9d9d9;
   box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+  overflow-x: auto;
 }
 
 @media screen and (max-width: 600px) {
@@ -259,6 +260,9 @@ header>div:last-child {
   .searchResultsContainer {
     width: 250px;
   }
+}
+table {
+  color: black;
 }
 
 .searchResultsList {
@@ -459,13 +463,12 @@ textarea {
 }
 /* courses */
 table {
-  font-family: 'Times New Roman', Times, serif;
   border-collapse: collapse;
   width: 100%;
 }
 th, td {
   text-align: left;
-  min-width: 250px;
+  /* min-width: 250px; */
   padding: 8px;
 }
 tr:nth-child(even) {

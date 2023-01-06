@@ -11,11 +11,15 @@
     })
   }
 
-  closeBtn.addEventListener("click", () => {
+  const closeSearch = () => {
     searchContainer.style.visibility = "";
     searchResults.style.visibility = "hidden";
     searchInput.value = "";
-  })
+  }
+
+  closeBtn.addEventListener("click", closeSearch)
   searchButtonEventListener(searchButtonMobile);
   searchButtonEventListener(searchButtonDesktop);
+
+  document.addEventListener("scroll", closeSearch);
 })();

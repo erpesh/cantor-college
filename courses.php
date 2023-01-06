@@ -4,25 +4,6 @@ $computingQuery = "SELECT * FROM courses WHERE CourseSubject = \"Computing\"";
 $desingQuery = "SELECT * FROM courses WHERE CourseSubject = \"Art and design\"";
 $computingCourses = $mysqli->query($computingQuery);
 $designCourses = $mysqli->query($desingQuery);
-
-function tableEcho(object $resultObject)
-{
-  while ($obj = $resultObject->fetch_object()) {
-    echo "<tr>";
-    echo "<td>" . $obj->CourseTitle . "</td>";
-    echo "<td class=\"typeColumn\">" . $obj->CourseType . "</td>";
-    // echo "<td class=\"summary\">" . $obj->CourseSummary . "</td>";
-    // echo "<td>" . $obj->CourseAwardName . "</td>";
-    // echo "<td>" . $obj->UcasCode . "</td>";
-    // echo "<td>" . $obj->UcasPoints . "</td>";
-    // echo "<td>" . $obj->YearOfEntry . "</td>";
-    // echo "<td>" . $obj->ModeOfAttendance . "</td>";
-    // echo "<td>" . $obj->StudyLength . "</td>";
-    // echo "<td>" . $obj->HasFoundationYear . "</td>";
-    // echo "<td>" . $obj->NoLongerRecruiting . "</td>";
-    echo "</tr>";
-  }
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -65,15 +46,6 @@ function tableEcho(object $resultObject)
             <tr>
               <th>Title</th>
               <th class="typeColumn">Type</th>
-              <!-- <th class="summary">Summary</th>
-                <th>Award</th>
-                <th>UCAS Code</th>
-                <th>UCAS Points</th>
-                <th>Year of Entry</th>
-                <th>Attendance Mode</th>
-                <th>Length</th>
-                <th>Foundation Year</th>
-                <th>No Longer Recruiting</th> -->
             </tr>
             <?php
             tableEcho($computingCourses);
@@ -99,15 +71,6 @@ function tableEcho(object $resultObject)
             <tr>
               <th>Title</th>
               <th class="typeColumn">Type</th>
-              <!-- <th class="summary">Summary</th>
-                <th>Award</th>
-                <th>UCAS Code</th>
-                <th>UCAS Points</th>
-                <th>Year of Entry</th>
-                <th>Attendance Mode</th>
-                <th>Length</th>
-                <th>Foundation Year</th>
-                <th>No Longer Recruiting</th> -->
             </tr>
             <?php
             tableEcho($designCourses);

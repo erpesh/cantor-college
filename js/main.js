@@ -29,7 +29,6 @@
     document.querySelectorAll("nav > menu > li > a").forEach(item => {
       const path = document.location.pathname.split("/");
       const fileName = path[path.length - 1];
-      console.log(fileName)
       if (!!fileName && item.getAttribute("href").includes(fileName)){
           item.setAttribute("class", "activeNavItem");
       }

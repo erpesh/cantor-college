@@ -2,14 +2,14 @@
   <div class="searchContainer" style="visibility: <?php echo (isset($_POST["q"])) ? 'visible' : 'hidden'; ?>">
     <div class="searchResultsPositioner" style="visibility: <?php echo (isset($_POST["q"])) ? 'visible' : 'hidden'; ?>">
       <div class="searchResultsContainer">
-        <ul class="searchResultsList">
+        <table>
           <?php
           include("includes/search.php");
           ?>
-        </ul>
+        </table>
       </div>
     </div>
-    <form action="" method="POST" class="searchForm">
+    <form method="POST" class="searchForm">
       <div class="searchInput">
         <input type="text" id="searchInput" name="q" value="<?php echo (isset($_POST["q"])) ? $_POST["q"] : ''; ?>">
       </div>

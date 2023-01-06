@@ -9,17 +9,23 @@ function getSearchResults(?string $query)
   $stmt->bind_param('s', $searchQuery);
   $stmt->execute();
   $result = $stmt->get_result();
-  while ($obj = $result->fetch_object()) {
-    echoObject($obj);
+  tableEcho($result);
+}
+function tableEcho(object $resultObject)
+{
+  while ($obj = $resultObject->fetch_object()) {
+    echo "<tr>";
+    echo "<td>" . $obj->CourseTitle . "</td>";
+    echo "<td class=\"typeColumn\">" . $obj->CourseType . "</td>";
+    echo "</tr>";
   }
 }
-
-function echoObject(?object $courseItem)
-{
-  echo "<li class=\"searchResultsItem\">";
-  echo $courseItem->CourseTitle;
-  echo "</li>";
-}
+// function echoObject(?object $courseItem)
+// {
+//   echo "<li class=\"searchResultsItem\">";
+//   echo $courseItem->CourseTitle;
+//   echo "</li>";
+// }
 ?>
 
 <?php
@@ -27,4 +33,3 @@ if (isset($_POST['q'])) {
   getSearchResults($_POST['q']);
 }
 ?>
-
