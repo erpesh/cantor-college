@@ -235,6 +235,8 @@ header>div:last-child {
   border-top-color: #d9d9d9;
   box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
   overflow-x: auto;
+  overflow-y: auto;
+  max-height: 80vh;
 }
 
 @media screen and (max-width: 600px) {
@@ -274,6 +276,11 @@ table {
 .searchResultsItem {
   color: #111;
   padding: 0 1rem;
+}
+.noResults{
+  color:black;
+  margin-bottom: 50px; 
+  font-size: 18px;
 }
 /* Rotate first bar */
 .burger.changeBurger>.line:first-child {
@@ -468,7 +475,7 @@ table {
 }
 th, td {
   text-align: left;
-  /* min-width: 250px; */
+  font-size: 16px;
   padding: 8px;
 }
 tr:nth-child(even) {

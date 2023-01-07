@@ -168,3 +168,6 @@ div.address {
     margin: 0 auto;
     width: 500px;
 }
+th, td {
+    font-size: 20px;
+}

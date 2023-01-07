@@ -1,8 +1,12 @@
 <?php
 require_once("includes/config.php");
+
+if (!isset($_SERVER['HTTP_REFERER'])) { // redirect if the page was accessed directly
+  header("Location: index.php");
+}
+
 $postQuery = "";
-if (!empty($_POST)) 
-{
+if (count($_POST) > 1) {
   $firstName = $_REQUEST["firstname"];
   $lastName = $_REQUEST["lastname"];
   $email = $_REQUEST["email"];
@@ -34,11 +38,11 @@ if (!empty($_POST))
       <h2>Thank you!</h2>
       <section class="centre">
         <?php
-          if(!empty($_POST) && mysqli_query($mysqli, $postQuery)){
-            echo "<h1>Thank you! We will get in touch with you shortly!</h1>";
-          } else{
-            echo "<h1>Something went wrong. Please go back and try to fill in the contact form again.</h1>";
-          }
+        if (count($_POST) > 1 && mysqli_query($mysqli, $postQuery)) {
+          echo "<h1>Thank you! We will get in touch with you shortly!</h1>";
+        } else {
+          echo "<h1>Something went wrong. Please go back and try to fill in the contact form again.</h1>";
+        }
         ?>
       </section>
     </main>

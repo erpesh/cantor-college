@@ -11,7 +11,7 @@
     </div>
     <form method="POST" class="searchForm">
       <div class="searchInput">
-        <input type="text" id="searchInput" name="q" value="<?php echo (isset($_POST["q"])) ? $_POST["q"] : ''; ?>">
+        <input required minlength="3" type="text" id="searchInput" name="q" value="<?php echo (isset($_POST["q"])) ? $_POST["q"] : ''; ?>">
       </div>
       <button type="submit" class="searchIconInside">
         <img src="images/search.png" />

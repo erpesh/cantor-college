@@ -9,7 +9,11 @@ function getSearchResults(?string $query)
   $stmt->bind_param('s', $searchQuery);
   $stmt->execute();
   $result = $stmt->get_result();
-  tableEcho($result);
+  if ($result->num_rows){
+    tableEcho($result);
+  }else {
+    noResults();
+  }
 }
 function tableEcho(object $resultObject)
 {
@@ -20,12 +24,9 @@ function tableEcho(object $resultObject)
     echo "</tr>";
   }
 }
-// function echoObject(?object $courseItem)
-// {
-//   echo "<li class=\"searchResultsItem\">";
-//   echo $courseItem->CourseTitle;
-//   echo "</li>";
-// }
+function noResults(){
+  echo "<span class=\"noResults\">No results found</span>";
+}
 ?>
 
 <?php
