@@ -12,7 +12,6 @@ if (count($_POST) > 1) {
   $email = $_REQUEST["email"];
   $telephone = $_REQUEST["tel"];
   $message = $_REQUEST["message"];
-  // $mes = $_REQUEST["da"];
   $postQuery = "INSERT INTO contactforms (userFirstName, userLastName, userEmail, userTelNumber, userMessage) 
   VALUES ('$firstName', '$lastName', '$email', '$telephone', '$message');";
 }

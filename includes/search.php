@@ -10,16 +10,16 @@ function getSearchResults(?string $query)
   $stmt->execute();
   $result = $stmt->get_result();
   if ($result->num_rows){
-    tableEcho($result);
+    tableOutput($result);
   }else {
     noResults();
   }
 }
-function tableEcho(object $resultObject)
+function tableOutput(object $resultObject)
 {
   while ($obj = $resultObject->fetch_object()) {
     echo "<tr>";
-    echo "<td>" . $obj->CourseTitle . "</td>";
+    echo "<td class=\"titleColumn\"><a href=\"courseDetails.php?courseId={$obj->CourseId}\">{$obj->CourseTitle}</a></td>";
     echo "<td class=\"typeColumn\">" . $obj->CourseType . "</td>";
     echo "</tr>";
   }

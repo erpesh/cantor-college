@@ -48,7 +48,7 @@ $designCourses = $mysqli->query($desingQuery);
               <th class="typeColumn">Type</th>
             </tr>
             <?php
-            tableEcho($computingCourses);
+            tableOutput($computingCourses);
             ?>
           </table>
         </div>
@@ -69,11 +69,11 @@ $designCourses = $mysqli->query($desingQuery);
         <div style="overflow-x:auto;">
           <table>
             <tr>
-              <th>Title</th>
+              <th class="titleColumn">Title</th>
               <th class="typeColumn">Type</th>
             </tr>
             <?php
-            tableEcho($designCourses);
+            tableOutput($designCourses);
             ?>
           </table>
         </div>
