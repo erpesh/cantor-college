@@ -368,6 +368,10 @@ ul.contacts > li > a {
 ul.contacts > li{
   font-size: 20px;
 }
+/* business  */
+.businessImage {
+  background:linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,6)), url('../images/business.jpg');
+}
 /* facilities */
 .facilitiesImage{
   background:linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,6)), url('../images/facilities.webp');
@@ -382,7 +386,7 @@ ol.resources > li::marker{
   font-style: italic;
 }
 .resourcesImage{
-  background:linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,6)), url('../images/resources.webp');
+  background:linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,6)), url('../images/resources.jpg');
 }
 /* for staff */
 ul.nonDecor{
@@ -472,6 +476,9 @@ textarea {
   justify-content: center;
 }
 /* courses */
+.coursesImage{
+  background:linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,6)), url('../images/courses.webp');
+}
 table {
   border-collapse: collapse;
   width: 100%;
