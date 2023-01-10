@@ -18,8 +18,8 @@ function getSearchResults(?string $query)
 function tableOutput(object $resultObject)
 {
   while ($obj = $resultObject->fetch_object()) {
-    echo "<tr>";
-    echo "<td class=\"titleColumn\"><a href=\"courseDetails.php?courseId={$obj->CourseId}\">{$obj->CourseTitle}</a></td>";
+    echo "<tr class=\"tableRow\" onclick=\"window.location='courseDetails.php?courseId={$obj->CourseId}'\">";
+    echo "<td class=\"titleColumn\">{$obj->CourseTitle}</td>";
     echo "<td class=\"typeColumn\">" . $obj->CourseType . "</td>";
     echo "</tr>";
   }

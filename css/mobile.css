@@ -297,7 +297,18 @@ table {
 .burger.changeBurger>.line:last-child {
   transform: translate(0, -11px) rotate(45deg);
 }
+/* slider */
+.slider {
+  width: 100%;
+}
 
+.slider > img {
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  max-height: 600px;
+  object-fit: cover;
+}
 /* main content */
 div.bannerImage > h1 {
   width: 80%;
@@ -491,6 +502,13 @@ th, td {
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+.tableRow{
+  cursor: pointer;
+}
+.tableRow:hover{
+  transition: 1s;
+  background-color: var(--main-theme-colour);
+}
 .typeColumn{
   width: 150px;
 }
@@ -502,6 +520,14 @@ section.courseDetails {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+}
+section.courseDetails  > p{
+  margin: .675rem 0;
+}
+@media screen and (max-width: 300px){
+  section.courseDetails  > p{
+    font-size: 14px;
+  }
 }
 .courseSummary {
   grid-column: span 2;

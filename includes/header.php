@@ -40,7 +40,7 @@
     <div>
       <nav class="mainNav">
         <menu>
-          <li><a class="navItem" href="aboutUs.php">About Us</a></li>
+          <li><a class="navItem" href="index.php">Home</a></li>
           <li><a class="navItem" href="courses.php">Courses</a></li>
           <li><a class="navItem" href="facilities.php">Facilities</a></li>
           <li><a class="navItem" href="resources.php">Resources</a></li>

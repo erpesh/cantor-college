@@ -113,48 +113,14 @@ div.address {
     width: 100%;
     height: 300px;
 }
-
+section.courseDetails  > p{
+    font-size: 26px;
+}
 /* templates */
-.homePage {
-    flex-wrap: nowrap;
-}
-
-.homePage>div>a img {
-    transition: all 0.5s;
-}
-
-.homePage>div>a:hover img {
-    transform: scale(0.9);
-}
 
 .twoColumn {
     display: grid;
     grid-template-columns: 3fr 1fr;
-}
-
-.filmDetails {
-    display: flex;
-}
-
-.filmDetails>div {
-    padding: 0 20px 0 0;
-}
-
-.sideBar {
-    padding: 5px;
-    background-color: var(--header-bg-colour);
-    color: var(--header-colour);
-    font-size: 0.9rem;
-    height: fit-content;
-}
-
-.sideBar h3 {
-    text-align: center;
-}
-
-.sideBar div {
-    display: flex;
-    justify-content: center;
 }
 
 #contact {
