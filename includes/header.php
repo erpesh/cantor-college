@@ -14,26 +14,26 @@
         <input required minlength="3" type="text" id="searchInput" name="q" value="<?php echo (isset($_POST["q"])) ? $_POST["q"] : ''; ?>">
       </div>
       <button type="submit" class="searchIconInside">
-        <img src="images/search.png" />
+        <img alt="Search" src="images/search.png" />
       </button>
     </form>
     <button id="closeBtn">
-      <img src="images/close.svg" />
+      <img alt="Close Search" src="images/close.svg" />
     </button>
   </div>
   <header>
     <div class="topBar">
       <div>
         <a href="index.php">
-          <img src="images/logo.png" />
+          <img alt="Logo" src="images/logo.png" />
         </a>
       </div>
       <div class="mobileIcons">
         <div class="searchIcon">
-          <img src="images/search.png" />
+          <img alt="Search" src="images/search.png" />
         </div>
         <div class="burger">
-          <img src="images/menu.png" />
+          <img alt="Menu" src="images/menu.png" />
         </div>
       </div>
     </div>
@@ -50,7 +50,7 @@
           <li><a class="navItem" href="contactUs.php">Contact Us</a></li>
         </menu>
         <div class="searchIcon desktopIcon">
-          <img src="images/search.png" />
+          <img alt="Search" src="images/search.png" />
         </div>
       </nav>
     </div>

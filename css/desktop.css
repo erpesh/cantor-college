@@ -116,9 +116,15 @@ div.address {
     width: 100%;
     height: 300px;
 }
+section.courseDetails {
+    grid-template-columns: 1fr 1fr;
+}
 section.courseDetails  > p{
     font-size: 26px;
 }
+.courseSummary {
+    grid-column: span 2;
+  }
 /* templates */
 
 .twoColumn {

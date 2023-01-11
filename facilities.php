@@ -18,7 +18,7 @@
     <main>
       <div class="banner">
         <div class="bannerImage facilitiesImage" style="background-size: cover">
-          <img src="images/facilities.webp" style="visibility: hidden" />
+          <img alt="Banner image" src="images/facilities.webp" style="visibility: hidden" />
           <h1>Facilities</h1>
         </div>
       </div>

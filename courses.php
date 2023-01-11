@@ -25,7 +25,7 @@ $designCourses = $mysqli->query($desingQuery);
     <main>
       <div class="banner">
         <div class="bannerImage coursesImage" style="background-size: cover">
-          <img src="images/courses.webp" style="visibility: hidden" />
+          <img alt="Banner image" src="images/courses.webp" style="visibility: hidden" />
           <h1>Courses</h1>
         </div>
       </div>

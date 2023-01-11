@@ -18,7 +18,7 @@
     <main>
       <div class="banner">
         <div class="bannerImage forStudentsImage" style="background-size: cover">
-          <img src="images/forStudents.webp" style="visibility: hidden" />
+          <img alt="Banner image" src="images/forStudents.webp" style="visibility: hidden" />
           <h1>For Students</h1>
         </div>
       </div>
@@ -26,7 +26,7 @@
       <section>
         <ul class="nonDecor forStudents">
           <li>
-            <h4>Academic Information</h4>
+            <h3>Academic Information</h3>
             <ul>
               <li>Faculties - Links to all the Faculty and Departmental Offices with information on staff, courses and
                 events.</li>
@@ -39,7 +39,7 @@
             </ul>
           </li>
           <li>
-            <h4>Administrative Support</h4>
+            <h3>Administrative Support</h3>
             <ul>
               <li>Academic Registry - Information provided by the Academic Registry, including Academic Calendars,
                 Academic Regulations, Module Catalogue, information on award ceremonies and tuition fees.</li>
@@ -48,7 +48,7 @@
             </ul>
           </li>
           <li>
-            <h4>Student Services</h4>
+            <h3>Student Services</h3>
             <ul>
               <li>Advisory and Counselling Centre - academic advice, help for international students, careers guidance,
                 personal counselling, student loans and access funds and support for students with disabilities/learning
@@ -60,7 +60,7 @@
             </ul>
           </li>
           <li>
-            <h4>University Services</h4>
+            <h3>University Services</h3>
             <ul>
               <li>Catering Services - guide to the catering facilities on campus.</li>
               <li>Printing Services - information regarding services provided for students.</li>
@@ -69,7 +69,7 @@
             </ul>
           </li>
           <li>
-            <h4>Life at the University</h4>
+            <h3>Life at the University</h3>
             <ul>
               <li>Arts Centre - what's on at the University's arts venues.</li>
               <li>Students' Union - events and services provided by the Students' Union.</li>
@@ -78,7 +78,7 @@
             </ul>
           </li>
           <li>
-            <h4>Communications</h4>
+            <h3>Communications</h3>
             <ul>
               <li>Noticeboards - General, Classified, Events and Alumni noticeboards.</li>
               <li>Student Email Search - database of student email addresses.</li>

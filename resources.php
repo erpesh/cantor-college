@@ -18,7 +18,7 @@
     <main>
       <div class="banner">
         <div class="bannerImage resourcesImage" style="background-size: cover">
-          <img src="images/resources.jpg" style="visibility: hidden" />
+          <img alt="Banner image" src="images/resources.jpg" style="visibility: hidden" />
           <h1>Resources</h1>
         </div>
       </div>
@@ -49,7 +49,7 @@
         <ol type="A" class="resources">
           <li>
             <h3>Access</h3>
-            <ol type="i">
+            <ol type="i" title="Access">
               <li>The use of Learning Resources facilities is normally limited to use for the educational and other
                 purposes
                 of the College.</li>

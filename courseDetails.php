@@ -14,8 +14,8 @@ $obj = $result->fetch_object();
 function echoUcasInfo($obj)
 {
   if ($obj->UcasCode != null) {
-    echo "<p>UCAS Code: {$obj->UcasCode}</p>";
-    echo "<p>UCAS Points: {$obj->UcasPoints}</p>";
+    echo "<p>UCAS Code: <span>{$obj->UcasCode}</span></p>";
+    echo "<p>UCAS Points: <span>{$obj->UcasPoints}</span></p>";
   }
 }
 
@@ -49,14 +49,15 @@ function echoUcasInfo($obj)
         }
       ?>
       <section class="courseDetails">
-        <p>Course Type: <?php echo $obj->CourseType ?></p>
-        <p>Course Award: <?php echo $obj->CourseAwardName ?></p>
+        <p>Course Type: <span><?php echo $obj->CourseType ?></span></p>
+        <p>Course Award: <span><?php echo $obj->CourseAwardName ?></span></p>
         <?php echoUcasInfo($obj); ?>
-        <p>Year of Entry: <?php echo $obj->YearOfEntry ?></p>
-        <p>ModeOfAttendance: <?php echo $obj->ModeOfAttendance ?></p>
-        <p>Course Length: <?php echo $obj->StudyLength ?></p>
-        <p>Foundation Year:
-          <?php echo $obj->HasFoundationYear == 1 ? "✓" : "✗" ?>
+        <p>Year of Entry: <span><?php echo $obj->YearOfEntry ?></span></p>
+        <p>ModeOfAttendance: <span><?php echo $obj->ModeOfAttendance ?></span></p>
+        <p>Course Length: <span><?php echo $obj->StudyLength ?></span></p>
+        <p>
+          <?php echo $obj->HasFoundationYear == 1 ? "With" : "No" ?>
+          Foundation Year
         </p>
         <p class="courseSummary"><?php echo $obj->CourseSummary?></p>
       </section>

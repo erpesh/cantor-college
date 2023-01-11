@@ -18,7 +18,7 @@
     <main>
       <div class="banner">
         <div class="bannerImage businessImage" style="background-size: cover">
-          <img src="images/business.jpg" style="visibility: hidden" />
+          <img alt="Banner image" src="images/business.jpg" style="visibility: hidden" />
           <h1>Working with Business</h1>
         </div>
       </div>

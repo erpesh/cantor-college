@@ -16,14 +16,10 @@
   ?>
   <div class="mainContainer">
     <main>
-      <!-- <div class="slider">
-        <img src="images/slider/0.webp" />
-        <h2>Cantor College</h2>
-      </div> -->
       <div class="banner">
         <div class="bannerImage sliderImage"
           style="background: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,6)), url('images/slider/0.webp'); background-size: cover;">
-          <img src="images/slider/0.webp" style="visibility: hidden" />
+          <img alt="Slider Image" src="images/slider/0.webp" style="visibility: hidden" />
           <h1>Cantor College</h1>
         </div>
       </div>
@@ -48,7 +44,7 @@
             <li>SC4 2BB</li>
           </ul>
           <div class="iframeMap">
-            <iframe
+            <iframe title="College location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d707.6137939225056!2d-1.4683908721527261!3d53.37690931483411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48798338bc5a1d13%3A0xad74824d1242efa8!2sCantor%20College!5e0!3m2!1sen!2slt!4v1671788542943!5m2!1sen!2slt"
               style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
