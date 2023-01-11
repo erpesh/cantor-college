@@ -1,19 +1,19 @@
 (function () {
 
   let currentImageIndex = 0;
-  let slider = document.querySelector(".slider");
+  let sliderImageDiv = document.querySelector(".sliderImage");
+  let sliderImage = document.querySelector(".sliderImage > img");
   let images = [];
 
   for (let i = 0; i < 8; i++){
-    let newImage = new Image();
-    newImage.src = "images/slider/"+i+".webp";
-    images.push(newImage);
+    images.push("images/slider/"+i+".webp");
   }
-
   function nextImage(){
+    prevImage = "images/slider/"+ currentImageIndex +".webp";
     currentImageIndex = currentImageIndex === 7 ? 0 : currentImageIndex + 1;
-    slider.innerHTML = "";
-    slider.appendChild(images[currentImageIndex]);
+    sliderImageDiv.style.background = sliderImageDiv.style.background.replace(prevImage, images[currentImageIndex]);
+    sliderImage.src = images[currentImageIndex];
+    sliderImageDiv.style.backgroundSize = "cover"
   }
   setInterval(() => {
     nextImage();

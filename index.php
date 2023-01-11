@@ -16,8 +16,16 @@
   ?>
   <div class="mainContainer">
     <main>
-      <div class="slider">
+      <!-- <div class="slider">
         <img src="images/slider/0.webp" />
+        <h2>Cantor College</h2>
+      </div> -->
+      <div class="banner">
+        <div class="bannerImage sliderImage"
+          style="background: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,6)), url('images/slider/0.webp'); background-size: cover;">
+          <img src="images/slider/0.webp" style="visibility: hidden" />
+          <h1>Cantor College</h1>
+        </div>
       </div>
       <h2>About Us</h2>
       <section>
@@ -50,6 +58,7 @@
           <li>Tel: <a href="tel:+(01321) 2340 235">(01321) 2340 235</a></li>
           <li>Fax: <a href="tel:+(01321) 2340 236">(01321) 2340 236</a></li>
           <li>Email: <a href="mailto:info@cantorcollege.ac.uk">info@cantorcollege.ac.uk</a></li>
+          <li><a href="contactUs.php">Contact form</a></li>
         </ul>
       </section>
     </main>
